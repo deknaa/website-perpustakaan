@@ -1,0 +1,334 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Akhir dari Reset CSS */
+
+.container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+nav {
+    background-color: #fffded;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    color: #01161e;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.logo {
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.nav-list {
+    justify-content: end;
+    padding: 15px;
+}
+
+.nav-list > a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-list > a:hover {
+    background-color: #EB8258;
+    padding: 10px;
+    color: #fffded;
+    border-radius: 5px;
+}
+
+.toggle-menu {
+    display: none;
+}
+
+.background-hero {
+    background-image: url('assets/background-library.jpg');
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.wrapper_main {
+    position: absolute;
+    top: 40%;
+}
+
+.text_heading > h1{
+    font-size: 30pt;
+}
+
+.wrapper_btn {
+    margin-top: 5%;
+}
+
+.btn_cta {
+    background-color: #EB8258;
+    padding: 10px;
+    color: #fffded;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn_cta:hover{
+    background-color: #c56f4d;
+}
+
+.layanan_wrapper {
+    display: flex;
+}
+
+.bseller_wrapper {
+    display: flex;
+}
+
+.card {
+    background-color: #EB8258;
+    width: 300px;
+    height: 25vh;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+#layanan {
+    text-align: center;
+    height: 60vh;
+}
+
+.text_heading_layanan {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card > h3 {
+    font-size: 20pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.layanan > img {
+    width: 30%;
+    margin-bottom: 5%;
+}
+
+.layanan > h2 {
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text_heading_bseller{
+    margin-bottom: 5%;
+}
+
+#best_seller {
+    text-align: center;
+    height: 50vh;
+}
+
+footer {
+    background-color: #EB8258;
+    height: 20vh;
+}
+
+.wrapper_footer {
+    display: flex;
+}
+
+.left {
+    flex-basis: 40%;
+    margin-top: 2%;
+}
+
+.center {
+    flex-basis: 30%;
+    margin-top: 2%;
+}
+
+.right {
+    flex: 30%;
+    margin-top: 2%;
+}
+
+.wrapper_copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper_copyright > p {
+    position: relative;
+    top: 40px;
+}
+
+.left > h3 {
+    font-weight: bold;
+    font-size: 20pt;
+    margin-bottom: 7px;
+}
+
+.left > p {
+    margin-right: 5%;
+}
+
+.center > h3 {
+    font-weight: bold;
+    font-size: 20pt;
+    margin-bottom: 7px;
+}
+
+.center > p {
+    margin-right: 5%;
+}
+
+
+
+@media (max-width: 650px) {
+    nav {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .toggle-menu {
+        display: block;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .wrapper_main {
+        text-align: center;
+    }
+
+    .layanan_wrapper {
+        flex-direction: column;
+    }
+
+    .bseller_wrapper {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: auto;
+        margin-bottom: 5%;
+    }
+    .text_heading_layanan {
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    #layanan {
+        height: 75vh;
+    }
+
+    .layanan > img {
+        width: 15%;
+        margin-bottom: 3%;
+    }
+
+    .layanan > p {
+        margin-bottom: 10%;
+    }
+
+    .layanan > h2 {
+        font-size: 15pt;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .text_heading_bseller {
+        margin-bottom: 8%;
+    }
+
+    #best_seller {
+        height: 95vh;
+    }
+
+    .wrapper_footer {
+        padding-left: 10%;
+        padding-right: 10%;
+        flex-wrap: wrap;
+    }
+
+    .left {
+        flex: 50%;
+        margin-top: 5%;
+    }
+
+    .center {
+        flex: 50%;
+        margin-top: 5%;
+    }
+
+    .right {
+        flex: 100%;
+        margin-top: 5%;
+    }
+
+    footer {
+        height: 33vh;
+    }
+}
