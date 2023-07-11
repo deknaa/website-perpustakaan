@@ -12,3 +12,12 @@ function showHamburgerMenu(){
         document.getElementsByClassName('nav-list').style.display="block";
     }
 }
+
+let usahamu = 100;
+let respondDia = false;
+
+if(usahamu == 100 && respondDia == true){
+    console.log("Congrats.");
+}else{
+    console.log("NT Bang :)");
+}
