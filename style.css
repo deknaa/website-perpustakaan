@@ -176,6 +176,8 @@ nav {
 
 .text_heading_bseller{
     margin-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #best_seller {
@@ -249,9 +251,6 @@ footer {
     margin-bottom: 5px;
 }
 
-
-
-
 @media (max-width: 650px) {
     nav {
         padding-left: 10%;
@@ -324,6 +323,7 @@ footer {
         padding-left: 10%;
         padding-right: 10%;
         flex-wrap: wrap;
+        padding-top: 15 px;
     }
 
     .left {
