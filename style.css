@@ -149,7 +149,7 @@ nav {
 
 #layanan {
     text-align: center;
-    height: 60vh;
+    height: 50vh;
 }
 
 .text_heading_layanan {
@@ -236,6 +236,19 @@ footer {
 .center > p {
     margin-right: 5%;
 }
+
+.card > img {
+    margin-top: 10px;
+    width: 30%;
+}
+
+.card > h2 {
+    font-weight: bold;
+    font-size: 15pt;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 
 
 
