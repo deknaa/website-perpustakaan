@@ -73,24 +73,24 @@ nav {
     width: 100%;
 }
 
-.nav-list {
+#nav-list {
     justify-content: end;
     padding: 15px;
 }
 
-.nav-list > a {
+#nav-list > a {
     text-decoration: none;
     margin-right: 20px;
 }
 
-.nav-list > a:hover {
+#nav-list > a:hover {
     background-color: #EB8258;
     padding: 10px;
     color: #fffded;
     border-radius: 5px;
 }
 
-.toggle-menu {
+#toggle-menu {
     display: none;
 }
 
@@ -257,11 +257,11 @@ footer {
         padding-right: 10%;
     }
 
-    .nav-list {
+    #nav-list {
         display: none;
     }
 
-    .toggle-menu {
+    #toggle-menu {
         display: block;
         font-size: 25px;
         padding: 10px;

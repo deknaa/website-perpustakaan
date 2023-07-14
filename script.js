@@ -1,23 +1,15 @@
 function showHamburgerMenu(){
-    let x = document.getElementsByClassName('toggle-menu').innerHTML;
-    console.log(x);
+    let toggleMenu = document.getElementById('toggle-menu');
+    let navList = document.getElementById('nav-list');
+    let toggleIcon = document.getElementById('toggle-icon');
 
-    if(x == "x"){
+    if(toggleMenu.innerHTML === 'x'){
         console.log("Hamburger Menu Close.");
-        document.getElementsByClassName('toggle-menu');
-        document.getElementsByClassName('nav-list').style.display="none";
-    }else{
+        toggleMenu.innerHTML = "";
+        navList.style.display = "none";
+    }else{ 
         console.log("Hamburger Menu Open.");
-        document.getElementsByClassName('toggle-menu').innerHTML="x";
-        document.getElementsByClassName('nav-list').style.display="block";
+       toggleMenu.innerHTML = "x";
+       navList.style.display = "block";
     }
-}
-
-let usahamu = 100;
-let respondDia = false;
-
-if(usahamu == 100 && respondDia == true){
-    console.log("Congrats.");
-}else{
-    console.log("NT Bang :)");
 }
