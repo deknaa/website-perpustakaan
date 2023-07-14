@@ -9,7 +9,7 @@ function showHamburgerMenu(){
         navList.style.display = "none";
     }else{ 
         console.log("Hamburger Menu Open.");
-       toggleMenu.innerHTML = "x";
-       navList.style.display = "block";
+        toggleMenu.innerHTML = "x";
+        navList.style.display = "block";
     }
 }

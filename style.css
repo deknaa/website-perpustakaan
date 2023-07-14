@@ -44,6 +44,10 @@ table {
 }
 /* Akhir dari Reset CSS */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     padding-left: 15%;
     padding-right: 15%;
@@ -344,4 +348,6 @@ footer {
     footer {
         height: 33vh;
     }
+
+    
 }
